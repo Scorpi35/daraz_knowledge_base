@@ -14,7 +14,7 @@ This is a simple knowledge base of an online shopping website **Daraz**. The pro
 
 #### Algorithm
 
-<img src="https://github.com/Scorpi35/daraz_knowledge_base/blob/main/ScreenShots/Algorithm.png" width="750" height="750" />
+<img src="https://github.com/Scorpi35/daraz_knowledge_base/blob/main/ScreenShots/Algorithm.png" width="400" height="500" />
 
 #### Screenshots
 
