@@ -13,7 +13,7 @@ This is a simple knowledge base of an online shopping website **Daraz**. The pro
 
 #### Screenshots
 
-<img src="https://github.com/Scorpi35/daraz_knowledge_base/blob/main/ScreenShots/output.png" width="350" height="700" />
+<img src="https://github.com/Scorpi35/daraz_knowledge_base/blob/main/ScreenShots/output.png" width="700" height="350" />
 
 #### How to run the project?
 
