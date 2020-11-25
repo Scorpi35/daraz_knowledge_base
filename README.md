@@ -6,6 +6,7 @@ This is a simple knowledge base of an online shopping website **Daraz**. The pro
 #### Key Concepts
 * Knowledge Base
 * Entitiy Extraction and Recognition
+* Maximim Similarity Threshold
 
 #### Tools and Libraries
 * **IDE**:- PyCharm
