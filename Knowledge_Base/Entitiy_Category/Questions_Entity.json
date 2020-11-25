@@ -1,0 +1,1897 @@
+{
+  "entities": {
+    "item": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "value": "product",
+          "synonyms": ["package", "goods"]
+        },
+        {
+          "value": "gift",
+          "synonyms": ["present"]
+        },
+        {
+          "value": "parcel",
+          "synonyms": []
+        },
+        {
+          "value": "seal",
+          "synonyms": []
+        },
+        {
+          "value": "phone",
+          "synonyms": ["mobile"]
+        },
+        {
+          "value": "essential",
+          "synonyms":[]
+        },
+        {
+          "value": "cash",
+          "synonyms": ["credit card", "debit card", "credit/debit card"]
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "people": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "value": "friend",
+          "synonyms": ["partner"]
+        },
+        {
+          "value": "employee",
+          "synonyms": ["vendor", "seller"]
+        },
+        {
+          "value": "customer",
+          "synonyms" : ["buyer"]
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "place": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "value": "address",
+          "synonyms": ["location"]
+        },
+        {
+          "value": "arena",
+          "synonyms": []
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    },
+    "company": {
+      "automatically_extensible": true,
+      "data": [
+        {
+          "value": "Daraz",
+          "synonyms": []
+        }
+      ],
+      "matching_strictness": 1.0,
+      "use_synonyms": true
+    }
+  },
+  "intents": {
+    "my_account": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "How do I know if a"
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "product"
+            },
+            {
+              "text": "comes with fee installation?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "How do I know if a"
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "product"
+            },
+            {
+              "text": "comes with warranty?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "I lost my "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "warranty card"
+            },
+            {
+              "text": ". How can I claim my warranty?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "How to filter search results with "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "product"
+            },
+            {
+              "text": "Ratings?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "How to contact "
+            },
+            {
+              "entity": "people",
+              "slot_name": "people",
+              "text": "vendor"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Where can I find more detailed information about a"
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "product"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Are all"
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "products"
+            },
+            {
+              "text": " on Daraz new and unused?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "How do I know if a "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "product"
+            },
+            {
+              "text": " comes with fee installation?"
+            }
+          ]
+        }
+      ]
+    },
+    "payments":{
+      "utterances": [
+        {
+         "data": [
+            {
+              "text": "How can I get a refund when my payment method is "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "credit/debit card"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Is it secure to pay via "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "credit/debit card"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Do I need to pre-pay for my "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "product"
+            },
+            {
+              "text": " when I order it?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Are there any hidden charges when I make a "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "purchase"
+            },
+            {
+              "text": " on "
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": " ?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Does "
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": " offer installment plans?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "If an unauthorized transaction found against "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "Credit/Debit Card"
+            },
+            {
+              "text": " then what should I do?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "What is 3D secure password?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "What "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "Credit/Debit Card"
+            },
+            {
+              "text": " are acceptable for pre-payments?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "What "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "Credit/Debit Card"
+            },
+            {
+              "text": " are acceptable for pre-payments?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "What are weekly payment"
+            },
+            {
+              "entity": "people",
+              "slot_name": "people",
+              "text": "partner"
+            },
+            {
+              "text": " discounts?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "How do I pay on "
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": " ?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "How do I pay via "
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "eSewa"
+            },
+            {
+              "text": " on "
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": " ?"
+            }
+          ]
+        }
+      ]
+    },
+    "ordering": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "How payment method can I use to buy"
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "overseas"
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "products"
+            },
+            {
+              "text": " ?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Is "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "cash"
+            },
+            {
+              "text": " safe to use?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Are the "
+            },
+            {
+              "entity": "people",
+              "slot_name": "people",
+              "text": "employees"
+            },
+            {
+              "text": " at "
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": " safe?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "What is "
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": " doing to prevent hike on  "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "products"
+            },
+            {
+              "text": " that reduce the risk of the COVID-19 virus?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Will I be able to reach out to "
+            },
+            {
+              "entity": "people",
+              "slot_name": "people",
+              "text": "customer"
+            },
+            {
+              "text": " service during the crisis? "
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "How can I order daily "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "essentials"
+            },
+            {
+              "text": " through"
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz/Bigmart"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Problems with Check Our ot any issues encountered?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Can "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "orders"
+            },
+            {
+              "text": " be placed directly on "
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Bigmart"
+            },
+            {
+              "text": " website or over the"
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "phone"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "What are digital "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "goods"
+            },
+            {
+              "text": " ?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "What are global collection "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "products"
+            },
+            {
+              "text": " ?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Can the COVID-19 virus be transmitted via "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "packages"
+            },
+            {
+              "text": " ?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Items from the "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "cart"
+            },
+            {
+              "text": " were missing?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Can I return Dfresh"
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "items"
+            },
+            {
+              "text": " ?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "When are Dfresh "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "products"
+            },
+            {
+              "text": " delivered?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Are the "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "products"
+            },
+            {
+              "text": " under Dfresh fresh?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Are there delivery services on Saturday?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "How can I find "
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "overseas"
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "products"
+            },
+            {
+              "text": "on"
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Do I have to pay any duties or taxes on devlivery of my "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "order"
+            },
+            {
+              "text": " ?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "What should I be aware of when buying "
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "overseas"
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "products"
+            },
+            {
+              "text": " ?"
+            }
+          ]
+        }
+      ]
+    },
+    "daraz_mall": {
+      "utterances": [
+        {
+          "data":
+          [
+            {
+              "text": "How can I identify a "
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "DarazMall"
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "product"
+            },
+            {
+              "text": " in the website?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What do I do if my "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "order"
+            },
+            {
+              "text": "did not reach in the promised load time?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "How do I join"
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "DarazMall"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What is "
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "DarazMall"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What is a "
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "Flagship store"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What is "
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "DarazMall"
+            },
+            {
+              "text": "'s return policy?"
+            }
+          ]
+        }
+      ]
+    },
+    "voucher_promotions": {
+      "utterances": [
+        {
+          "data":
+          [
+            {
+              "text": "Can I play Daraz First Games on "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "Desktop"
+            },
+            {
+              "text": " too?"
+            }
+
+          ]
+        },{
+          "data":
+          [
+            {
+              "text": "Can I play Daraz First Games on "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "Desktop"
+            },
+            {
+              "text": " too?"
+            }
+
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What is "
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": " First Games?"
+            }
+
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What do I do if vouhcers I win are not working "
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": "First Games?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "Who should I contact if I face any difficulty using "
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": " First Games?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What do I do if the game is continuously loading and getting disconnected?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What kind of games are available on "
+            }
+
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What are Casual and "
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "Arena"
+            },
+            {
+              "text": " games?"
+            }
+
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "I am unable to join PvP or Tournament. What do I do?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What are the points and how can I use them?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "How do I redeem my points?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "How do I win Vouchers by playing games on"
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": " First Games?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "Why am I not able to see my collective Vouchers in my "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "Wallet"
+            },
+            {
+              "text": " ?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "Why am I not able to see my collective Vouchers in my "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "Wallet"
+            },
+            {
+              "text": " ?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "Why am I not unable to use my Collective Vouchers?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "Why am I not unable to collect vouchers?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What are collectible vouchers and it's matrix?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What is 'Shake Shake'?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "How can I redeem my collective voucher?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "My "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "order"
+            },
+            {
+              "text": "value is more than my voucher amount. What do I do?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "Can I choose not to use the collectible vouchers applied by default?"
+            }
+          ]
+        }
+      ]
+    },
+    "shopping_delivery": {
+      "utterances": [
+        {
+          "data": [
+            {
+              "text": "Why are my "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "items"
+            },
+            {
+              "text": "shipped separately?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Why are the most common reasons for delivery delays?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Can I change my shipping ?"
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "address"
+            },
+            {
+              "text": " after I have placed my "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "order"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Will somebody contact "
+            },
+            {
+              "entity": "people",
+              "slot_name": "people",
+              "text": "me"
+            },
+            {
+              "text": " before delivery the "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "package"
+            },
+            {
+              "text": "to my "
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "location"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "My "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "order"
+            },
+            {
+              "text": " is delayed. What should "
+            },
+            {
+              "entity": "people",
+              "slot_name": "people",
+              "text": "I"
+            },
+            {
+              "text": "do ? "
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "I found the "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "package"
+            },
+            {
+              "text": " open and the "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "product seal"
+            },
+            {
+              "text": "broken on delivery. What should I do?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "I ordered multiple"
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "items"
+            },
+            {
+              "text": " but I have received only one"
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "item"
+            },
+            {
+              "text": "so far. What's going on?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "My parcel"
+            },
+            {
+              "text": "has been reported missing. What now?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Does"
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": "deliver"
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "orders"
+            },
+            {
+              "text": "outside"
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "Nepal"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "How are shipping charges calculated?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "What is FBD and is it available for all the"
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "products"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Can I pick up my"
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "item"
+            },
+            {
+              "text": "instead of having it delivered?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "What type of"
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "products"
+            },
+            {
+              "text": "can be ordered and collected through a "
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "pickup point"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "What is "
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },{
+              "entity": "place",
+              "slot_name": "place",
+              "text": "pickup point"
+            },
+            {
+              "text": "service and how to avail it?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "Can I use COD option for "
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "Pick-up point"
+            },{
+              "entity": "item",
+              "slot_name": "item",
+              "text": "orders"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data": [
+            {
+              "text": "In how many days I can pick my "
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "order"
+            },
+            {
+              "text": "from"
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "Pick-up point"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        }
+      ]
+    },
+    "return_refund": {
+      "utterances": [
+        {
+          "data":
+          [
+            {
+              "text": "When will I receive my "
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "eSewa"
+            },
+            {
+              "text": "refund?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "How do I find refund voucher?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "How long is the return process?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "How do i check my return tracking number?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What is the"
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "overseas"
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "products"
+            },
+            {
+              "text": "policy?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What is the"
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": "'s warranty policy?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "How long is the refund process?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What is the status 'Refunded' when my"
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "money"
+            },
+            {
+              "text": "hasn't been credited?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "Do I have to pay for my return?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What is"
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": "'s return policy?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "Does"
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": "refund shipping fee?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What is"
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": "refund policy?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "Does"
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": "refund shipping fee?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "How do I check if my"
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "product"
+            },
+            {
+              "text": "has a warranty?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What is the nearest"
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "drop-off location"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What is the time frame in which a return request can be made?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "Can I return my"
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "item"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "How long is the quality evaluation process?"
+            }
+          ]
+        }
+      ]
+    },
+    "campaign": {
+      "utterances": [
+        {
+          "data":
+          [
+            {
+              "text": "How to Unsubscribe a "
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "entity": "item",
+              "slot_name": "item",
+              "text": "Newsletter"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "How do I report a listing infringment? "
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "Why do I sell on "
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "If "
+            },
+            {
+              "entity": "people",
+              "slot_name": "people",
+              "text": "I"
+            },
+            {
+              "text": "have found Bug/Vulnerability/Issue what should I do?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "How do "
+            },
+            {
+              "entity": "people",
+              "slot_name": "people",
+              "text": "I"
+            },
+            {
+              "text": "register"
+            },
+            {
+              "entity": "people",
+              "slot_name": "people",
+              "text": "myself"
+            },
+            {
+              "text": "as a"
+            },
+            {
+              "entity": "people",
+              "slot_name": "people",
+              "text": "seller"
+            },
+            {
+              "text": "on"
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What kind of questions can"
+            },
+            {
+              "entity": "people",
+              "slot_name": "people",
+              "text": "I"
+            },
+            {
+              "text": "on IM?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "How is Instant Messaging different from Q&A?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "How to reset your password through Email/SMS Verification?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "How do I sign up as a"
+            },
+            {
+              "entity": "people",
+              "slot_name": "people",
+              "text": "customer"
+            },
+            {
+              "text": "on"
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "How do I deactivate my account?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "How can I add a new delivery"
+            },
+            {
+              "entity": "place",
+              "slot_name": "place",
+              "text": "address"
+            },
+            {
+              "text": "to my account?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "How to change contact number?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "How to subscribe"
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": "newsletter?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "How can I deactivate push Notifications from DarazApp?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What are charges of selling on"
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        },
+        {
+          "data":
+          [
+            {
+              "text": "What are charges of selling on"
+            },
+            {
+              "entity": "company",
+              "slot_name": "company",
+              "text": "Daraz"
+            },
+            {
+              "text": "?"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "language": "en"
+}
