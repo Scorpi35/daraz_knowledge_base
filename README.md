@@ -4,6 +4,7 @@
 This is a simple knowledge base of an online shopping website **Daraz**. The project is implmeneted using Python.
 
 #### Key Concepts
+* Knowledge Base
 * Entitiy Extraction and Recognition
 
 #### Tools and Libraries
