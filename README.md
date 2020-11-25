@@ -11,6 +11,10 @@ This is a simple knowledge base of an online shopping website **Daraz**. The pro
 * **IDE**:- PyCharm
 * **Libraries:-** ChatterBot, snips_nlu, flask
 
+#### Screenshots
+
+<img src="https://github.com/Scorpi35/daraz_knowledge_base/blob/main/ScreenShots/output.png" width="350" height="700" />
+
 #### How to run the project?
 
 1. pip install -r requirements.txt
