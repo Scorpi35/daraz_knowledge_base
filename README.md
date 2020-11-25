@@ -18,7 +18,7 @@ This is a simple knowledge base of an online shopping website **Daraz**. The pro
 #### How to run the project?
 
 1. pip install -r requirements.txt
-2. Run **python app.py**
+2. Run **python app.py** (Keep it running beacause it's the server)
 3. Open **127.0.0.1:500** on browser
 4. Run **python ask_questions.py** 
 
