@@ -41,9 +41,6 @@ training_list = ["campaign.pkl",
   "voucher_promotions.pkl"]
 
 
-# Knowledge base for my account
-
-
 trainer = ListTrainer(DarazBot)
 
 for training_file in training_list:
