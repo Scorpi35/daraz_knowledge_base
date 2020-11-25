@@ -13,7 +13,9 @@ while (True):
     }
     response = requests.post(url, data)
     answer = json.loads(response.text)
+
     print("*************************************************")
+    print("Confidence Score:-" + str(answer['confidence']))
     print("Category:-" + answer['category'])
     print("Answer:- " + answer["answer"])
     print("---------")

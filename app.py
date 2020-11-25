@@ -65,6 +65,7 @@ def index():
             entities.append(item)
 
         response = {
+            "confidence": answer.confidence,
             "answer": str(answer),
             "category": category,
             "entity_classification": entities
