@@ -20,7 +20,13 @@ nlu_engine = nlu_engine.fit(entity_category_dataset)
 app = Flask(__name__)
 DarazBot = ChatBot(name='BankBot',
                    read_only=False,
-                   logic_adapters=["chatterbot.logic.BestMatch"],
+                   logic_adapters=[
+                       {
+                           'import_path': 'chatterbot.logic.BestMatch',
+                           'default_response': 'Sorry, I could not understand your question',
+                           'maximum_similarity_threshold': 0.9
+                       }
+                   ],
                    storage_adapter="chatterbot.storage.SQLStorageAdapter")
 
 # Building custom knowledge base
