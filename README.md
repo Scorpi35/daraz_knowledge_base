@@ -12,6 +12,10 @@ This is a simple knowledge base of an online shopping website **Daraz**. The pro
 * **IDE**:- PyCharm
 * **Libraries:-** ChatterBot, snips_nlu, flask
 
+#### Algorithm
+
+<img src="https://github.com/Scorpi35/daraz_knowledge_base/blob/main/ScreenShots/Algorithm.png" width="750" height="750" />
+
 #### Screenshots
 
 <img src="https://github.com/Scorpi35/daraz_knowledge_base/blob/main/ScreenShots/output.png" width="1000" height="250" />
